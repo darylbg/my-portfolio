@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.font-familjen-grotesk {
+  font-family: "Familjen Grotesk";
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+
+.font-tino {
+  font-family: "tino";
+}
+
+.font-hanken-grotesk {
+  font-family: "Hanken Grotesk";
+}
+
+.text-accent-yellow {
+  color: #daff00;
+}
+
+.bg-accent-yellow {
+  background-color: #daff00;
+}
+
+#navbar {
+  top: 0;
+}
+
+.navbar-hidden {
+  top: -100% !important;
+  transition: all ease-in-out 0.2s;
+}
+
+.px-section {
+  padding: 2rem 1rem;
+}
+
+.text-cqw-8 {
+  font-size: 8cqw;
+  line-height: 0.9;
+}
+
+.heading-2 {
+  font-size: 3cqw;
+}
+
+.education-item-expanded .content {
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.education-item-collapsed .content {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.education-item-expanded .collapse-icon,
+.education-item-collapsed .expand-icon {
+  display: flex;
+}
+
+.education-item-expanded .expand-icon,
+.education-item-collapsed .collapse-icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .heading-2 {
+    font-size: 5cqw;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .px-section {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .text-cqw-8 {
+    font-size: 90px;
+  }
+}
