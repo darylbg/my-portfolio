@@ -4,8 +4,10 @@ $(document).ready(function () {
   let isMobileMenuOpen = false;
   console.log(isMobileMenuOpen);
   $(window).scroll(function () {
+    let windowWidth = $(window).width();
+    console.log(windowWidth)
     let sp = $(this).scrollTop();
-    if (!isMobileMenuOpen) {
+    if (!isMobileMenuOpen || windowWidth > 640) {
       if (sp > lastScrollPosition) {
         $("#navbar").addClass("navbar-hidden");
       } else {
