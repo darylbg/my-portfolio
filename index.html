@@ -7,7 +7,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,11 +23,9 @@
   >
     <div
       id="navbar"
-      class="z-10 bg-stone-900 flex fixed w-full h-[50px] sm:h-[70px] px-5 items-center justify-between sm:justify-center border-b border-stone-600 sm:border-none"
+      class="z-10 bg-stone-900 flex fixed w-full h-[50px] sm:h-[60px] px-5 items-center justify-between sm:justify-center border-b border-stone-600 sm:border-none"
     >
-      <a
-        href="#home"
-        class="flex sm:hidden font-inter text-stone-400 font-bold"
+      <a href="#home" class="flex sm:hidden font-inter text-stone-400 font-bold"
         >uwu</a
       >
       <button
@@ -128,12 +126,12 @@
         <div class="flex flex-col flex-1">
           <h1 class="text-cqw-8 tracking-tighter">RIA CHERIAN</h1>
           <div class="flex items-baseline">
-            <h1 class="text-cqw-8 tracking-tighter text-accent-yellow">MARKETING</h1>
+            <h1 class="text-cqw-8 tracking-tighter text-accent-yellow">
+              MARKETING
+            </h1>
             <span class="text-sm text-stone-400 pl-4 font-light">*remote</span>
           </div>
-          <h1 class="text-cqw-8 tracking-tighter ">
-            SPECIALIST
-          </h1>
+          <h1 class="text-cqw-8 tracking-tighter">SPECIALIST</h1>
           <span class="text-sm text-stone-400 pt-4 font-light"
             >-based in the UK-</span
           >
@@ -187,7 +185,7 @@
             <span class="hidden sm:flex text-accent-yellow italic font-tino"
               >(5)</span
             >
-            <p class="text-stone-400">this is a featured project</p>
+            <p class="text-stone-300">this is a featured project</p>
           </div>
         </div>
         <div
@@ -384,7 +382,9 @@
         </div>
       </div>
       <!-- VERTICAL PROJECTS -->
-      <div class="flex flex-col sm:flex-row gap-10 md:gap-20 lg:gap-30 xl:gap-40">
+      <div
+        class="flex flex-col sm:flex-row gap-10 md:gap-20 lg:gap-30 xl:gap-40"
+      >
         <div class="flex flex-1 flex-col gap-5 justify-between">
           <div
             class="flex-1 max-h-[300px] aspect-video bg-[url('./assets/featured-project.jpeg')] bg-contain bg-center rounded-lg"
@@ -566,7 +566,29 @@
                 />
               </svg>
             </div>
-            <div class="content">this is the education bit</div>
+            <div class="content flex flex-col gap-2">
+              <p>learned a b c d and e</p>
+              <button
+                class="h-auto sm:h-9 py-1 px-4 bg-accent-yellow flex w-fit self-end gap-2 items-center rounded-full"
+              >
+                <span class="text-stone-900">SEE CERTIFICATE</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4 text-stone-900"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
           <!-- high school education -->
           <div
@@ -609,17 +631,127 @@
                 />
               </svg>
             </div>
-            <div class="content">this is the education bit</div>
+            <div class="content flex flex-col gap-2">
+              <p>learned a b c d and e</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section
-      class="max-w-screen-xl w-full px-section self-center mt-12 sm:mt-20 flex flex-col justify-center"
+      class="max-w-screen-xl w-full px-section self-center mt-12 sm:mt-20 flex flex-col justify-center gap-8"
       id="work"
-      style="height: 400px"
     >
-      work
+      <div class="flex flex-col sm:flex-row align-baseline pb-1 gap-0 sm:gap-5">
+        <div class="flex flex-1 gap-5 justify-end">
+          <h1 class="text-cqw-8">WORK</h1>
+          <span class="flex text-accent-yellow italic font-tino">(3)</span>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row">
+        <!-- work-1 -->
+        <div class="work-expanded flex flex-col sm:flex-row border-b-[1px] sm:border-b-0 sm:border-r-[1px] border-stone-400">
+          <div
+            class="work-trigger font-inter font-extrabold heading-2 flex hover:cursor-pointer"
+          >
+            <h2 class="text-stone-300 writing-mode-vert">
+              <span class="slash">/</span> Technical
+            </h2>
+          </div>
+          <div class="work-content flex flex-col py-2 sm:py-0 sm:px-2">
+            <h3 class="font-hanken-grotesk text-3xl text-stone-50">WEB DEVELOPER INTERN</h3>
+            <div class="flex flex-1 justify-between"><h6 class="font-inter font-extralight text-stone-400 pb-5">Nova International Group</h6><span class="italic font-tino text-md text-stone-400"
+              >(SEPT - DEC 2023)</span></div>
+            <p>
+              Designed, developed, and maintained a children's charity website
+              using Figma and WordPress. Collaborated with the product design,
+              product management, and software engineering teams to improve user
+              experience by 87%, including the implementation of
+              microinteractions and parallax scrolling. Implemented 11 uniquely
+              identified trends to create an optimal website, based on research
+              and analysis of data reports. Built a scalable system capable of
+              withstanding more than a 1000% increase in traffic, and improved
+              the speed of the website by up to 80% using the WP Rocket plugin.
+              Used the Yoast SEO plugin to optimize WordPress websites for
+              search engines, including features such as keyword research, title
+              tag and meta description optimization, and content analysis. Wrote
+              custom CSS to style the WordPress site, resulting in a more
+              visually appealing and user-friendly experience. Teamed up with
+              the development and management teams to create a system that
+              improves the children's charity's ability to track their progress,
+              measure their impact, and manage their website efficiently.
+            </p>
+          </div>
+        </div>
+        <!-- work 2 -->
+        <div class="work-collapsed flex flex-col sm:flex-row border-b-[1px] sm:border-b-0 sm:border-r-[1px] border-stone-400">
+          <div
+            class="work-trigger font-inter font-extrabold heading-2 flex hover:cursor-pointer"
+          >
+            <h2 class="text-stone-300 writing-mode-vert">
+              <span class="slash">/</span> Non-technical
+            </h2>
+          </div>
+          <div class="work-content flex flex-col py-2 sm:py-0 sm:px-2">
+            <h3 class="font-hanken-grotesk text-3xl text-stone-50">WEB DEVELOPER INTERN</h3>
+            <div class="flex flex-1 justify-between"><h6 class="font-inter font-extralight text-stone-400 pb-5">Nova International Group</h6><span class="italic font-tino text-md text-stone-400"
+              >(SEPT - DEC 2023)</span></div>
+            <p>
+              Designed, developed, and maintained a children's charity website
+              using Figma and WordPress. Collaborated with the product design,
+              product management, and software engineering teams to improve user
+              experience by 87%, including the implementation of
+              microinteractions and parallax scrolling. Implemented 11 uniquely
+              identified trends to create an optimal website, based on research
+              and analysis of data reports. Built a scalable system capable of
+              withstanding more than a 1000% increase in traffic, and improved
+              the speed of the website by up to 80% using the WP Rocket plugin.
+              Used the Yoast SEO plugin to optimize WordPress websites for
+              search engines, including features such as keyword research, title
+              tag and meta description optimization, and content analysis. Wrote
+              custom CSS to style the WordPress site, resulting in a more
+              visually appealing and user-friendly experience. Teamed up with
+              the development and management teams to create a system that
+              improves the children's charity's ability to track their progress,
+              measure their impact, and manage their website efficiently.
+            </p>
+          </div>
+        </div>
+        <!-- work 3 -->
+        <div class="work-collapsed flex flex-col sm:flex-row border-b-[1px] sm:border-b-0 sm:border-r-[1px] border-stone-400">
+          <div
+            class="work-trigger font-inter font-extrabold heading-2 flex hover:cursor-pointer"
+          >
+            <h2 class="text-stone-300 writing-mode-vert">
+              <span class="slash">/</span> Freelance
+            </h2>
+          </div>
+          <div class="work-content flex flex-col py-2 sm:py-0 sm:px-2">
+            <h3 class="font-hanken-grotesk text-3xl text-stone-50">WEB DEVELOPER INTERN</h3>
+            <div class="flex flex-1 justify-between"><h6 class="font-inter font-extralight text-stone-400 pb-5">Nova International Group</h6><span class="italic font-tino text-md text-stone-400"
+              >(SEPT - DEC 2023)</span></div>
+            <p>
+              Designed, developed, and maintained a children's charity website
+              using Figma and WordPress. Collaborated with the product design,
+              product management, and software engineering teams to improve user
+              experience by 87%, including the implementation of
+              microinteractions and parallax scrolling. Implemented 11 uniquely
+              identified trends to create an optimal website, based on research
+              and analysis of data reports. Built a scalable system capable of
+              withstanding more than a 1000% increase in traffic, and improved
+              the speed of the website by up to 80% using the WP Rocket plugin.
+              Used the Yoast SEO plugin to optimize WordPress websites for
+              search engines, including features such as keyword research, title
+              tag and meta description optimization, and content analysis. Wrote
+              custom CSS to style the WordPress site, resulting in a more
+              visually appealing and user-friendly experience. Teamed up with
+              the development and management teams to create a system that
+              improves the children's charity's ability to track their progress,
+              measure their impact, and manage their website efficiently.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section
       class="max-w-screen-xl w-full px-section self-center items-center mt-12 sm:mt-20 flex flex-col justify-center gap-32"

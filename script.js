@@ -59,4 +59,12 @@ $(document).ready(function () {
       .parent()
       .toggleClass("education-item-expanded education-item-collapsed");
   });
+
+  $(".work-trigger").click(function() {
+    if ($(this).parent().hasClass("work-expanded")) {
+      return
+    }
+    $(this).parent().toggleClass("work-expanded work-collapsed");
+    $(this).parent().siblings().addClass("work-collapsed").removeClass("work-expanded");
+  });
 });
