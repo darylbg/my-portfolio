@@ -46,6 +46,14 @@
   font-size: 3cqw;
 }
 
+.education-item-expanded {
+  gap: 2rem;
+}
+
+.education-item-collapsed {
+  gap: 0;
+}
+
 .education-item-expanded .content {
   height: auto;
   padding-bottom: 1rem;
