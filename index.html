@@ -141,8 +141,8 @@
         </div>
         <img
           class="w-auto max-w-[80%] sm:w-60 md:w-80 h-auto max-h-[400px] aspect-[9/14] object-cover filter grayscale self-end"
-          src="https://i.namu.wiki/i/62PzqFLiWhEYXdgIShmClk8Kwn3xlvctARCKY3JCXrUrkJMne4-vXa98Lo3DPL3LEIzMz7jI62aUrhx3OYekFA.webp"
-          alt="headshot"
+          src="./assets/profile.jpg"
+          alt="profile image"
         />
       </div>
       <a
@@ -189,18 +189,22 @@
           </div>
         </div>
         <div
-          class="relative flex aspect-video sm:aspect-[21/9] border-2 border-[#daff00] rounded-lg bg-[url('./assets/featured-project.jpeg')] bg-contain bg-center"
+          class="relative flex aspect-video sm:aspect-[21/9] border-2 border-[#daff00] rounded-lg bg-[url('./assets/airbnp16-9.PNG')] sm:bg-[url('./assets/airbnp21-9.PNG')] bg-cover bg-center bg-no-repeat"
         >
           <div
-            class="absolute flex flex-col justify-between p-4 lg:p-8 inset-0 bg-gradient-to-t from-stone-900 to-transparent rounded-lg"
+            class="absolute flex flex-col justify-between p-4 lg:p-8 inset-0 bg-gradient-to-t from-[rgba(28,25,23,1)] to-[rgba(28,25,23,0.2)] rounded-lg"
           >
             <div class="flex self-end gap-2">
-              <button
+              <a
+                href="https://github.com/darylbg/airbnp-2.0"
+                target="_blank"
                 class="h-auto sm:h-9 py-1 px-4 text-stone-900 bg-accent-yellow flex gap-2 items-center rounded-full"
               >
                 VIEW CODE
-              </button>
-              <button
+              </a>
+              <a
+                href="https://airbnp-09fcc295dd0d.herokuapp.com/"
+                target="_blank"
                 class="h-auto sm:h-9 w-auto sm:w-9 justify-center group aspect-square p-2 bg-accent-yellow flex gap-2 items-center rounded-full transition-ease-in"
               >
                 <svg
@@ -217,9 +221,9 @@
                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="hidden md:flex flex-col gap-2">
               <div class="flex gap-2 items-baseline">
                 <h2 class="font-inter font-extrabold heading-2 text-stone-50">
                   AIRBNP
@@ -242,12 +246,70 @@
                 <div
                   class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
                 >
+                  GRAPH QL
+                </div>
+                <div
+                  class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
+                >
                   REDUX
                 </div>
+                <div
+                  class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
+                >
+                  MAPBOX
+                </div>
               </div>
-              <p class="text-stone-300 text-lg">This is airbnp</p>
+              <p class="text-stone-300 text-lg">
+                A full stack web application built with MERN stack (MongoDB,
+                Express, React, Node.js) integrated with GraphQL for API queries
+                and mutations. The app is deployed to Heroku and uses modern
+                architecture for data storage, user authentication, real-time
+                updates
+              </p>
             </div>
           </div>
+        </div>
+        <div class="flex md:hidden flex-col gap-2">
+          <div class="flex gap-2 items-baseline">
+            <h2 class="font-inter font-extrabold heading-2 text-stone-50">
+              AIRBNP
+            </h2>
+            <span class="italic font-tino text-md text-stone-400">(2024)</span>
+          </div>
+          <div class="flex gap-2 flex-wrap">
+            <div
+              class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
+            >
+              REACT
+            </div>
+            <div
+              class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
+            >
+              MONGO DB
+            </div>
+            <div
+              class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
+            >
+              GRAPH QL
+            </div>
+            <div
+              class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
+            >
+              REDUX
+            </div>
+            <div
+              class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
+            >
+              MAPBOX
+            </div>
+          </div>
+          <p class="text-stone-300 text-lg">
+            A full stack web application built with MERN stack (MongoDB,
+            Express, React, Node.js) integrated with GraphQL for API queries and
+            mutations. The app is deployed to Heroku and uses modern
+            architecture for data storage, user authentication, real-time
+            updates
+          </p>
         </div>
       </div>
       <!-- HORIZONTAL PROJECTS -->
@@ -255,7 +317,9 @@
         <div
           class="flex flex-col-reverse sm:flex-row gap-5 sm:gap-20 justify-between"
         >
-          <div class="flex flex-col justify-between gap-5">
+          <div
+            class="flex flex-col justify-between gap-5 max-w-full sm:max-w-[50%]"
+          >
             <div>
               <div class="flex flex-col gap-2">
                 <div class="flex gap-2 items-baseline">
@@ -263,7 +327,7 @@
                     WRITEME
                   </h2>
                   <span class="italic font-tino text-md text-stone-400"
-                    >(2024)</span
+                    >(2023)</span
                   >
                 </div>
                 <div class="flex gap-2">
@@ -275,24 +339,26 @@
                   <div
                     class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
                   >
-                    MONGO DB
-                  </div>
-                  <div
-                    class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
-                  >
-                    REDUX
+                    OPENAI CHAT GPT API
                   </div>
                 </div>
-                <p class="text-stone-300 text-lg">This is airbnp</p>
+                <p class="text-stone-300 text-lg">
+                  WriteMe is a simple web application that allows users to
+                  generate README.md files in markdown syntax.
+                </p>
               </div>
             </div>
             <div class="flex gap-2">
-              <button
+              <a
+                href="https://github.com/darylbg/writeme"
+                target="_blank"
                 class="h-auto sm:h-9 py-1 px-4 text-stone-900 bg-accent-yellow flex gap-2 items-center rounded-full"
               >
                 VIEW CODE
-              </button>
-              <button
+              </a>
+              <a
+                href="https://darylbg.github.io/writeme/"
+                target="_blank"
                 class="h-auto sm:h-9 w-auto sm:w-9 group aspect-square p-2 bg-accent-yellow flex gap-2 items-center justify-center rounded-full transition-ease-in"
               >
                 <svg
@@ -309,25 +375,27 @@
                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           <div
-            class="flex-1 max-h-[300px] max-w-full sm:max-w-1/2 aspect-video bg-[url('./assets/featured-project.jpeg')] bg-contain bg-center rounded-lg"
+            class="flex-1 max-h-[300px] max-w-full sm:max-w-1/2 aspect-video bg-[url('./assets/writeme.PNG')] bg-cover bg-center rounded-lg bg-no-repeat"
           ></div>
         </div>
         <div
           class="flex flex-col-reverse sm:flex-row gap-5 sm:gap-20 justify-between"
         >
-          <div class="flex flex-col justify-between gap-5">
+          <div
+            class="flex flex-col justify-between gap-5 max-w-full sm:max-w-[50%]"
+          >
             <div>
               <div class="flex flex-col gap-2">
                 <div class="flex gap-2 items-baseline">
                   <h2 class="font-inter font-extrabold heading-2 text-stone-50">
-                    WRITEME
+                    ZOOMTUBE
                   </h2>
                   <span class="italic font-tino text-md text-stone-400"
-                    >(2024)</span
+                    >(2023)</span
                   >
                 </div>
                 <div class="flex gap-2">
@@ -339,25 +407,27 @@
                   <div
                     class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
                   >
-                    MONGO DB
-                  </div>
-                  <div
-                    class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
-                  >
-                    REDUX
+                    BOOTSTRAP
                   </div>
                 </div>
-                <p class="text-stone-300 text-lg">This is airbnp</p>
+                <p class="text-stone-300 text-lg">
+                  ZoomTube is an app to discretely watch Youtube videos on your
+                  device while looking like you are on a Zoom call.
+                </p>
               </div>
             </div>
             <div class="flex gap-2">
-              <button
+              <a
+                href="https://github.com/darylbg/zoomTube"
+                target="_blank"
                 class="h-auto sm:h-9 py-1 px-4 text-stone-900 bg-accent-yellow flex gap-2 items-center rounded-full"
               >
                 VIEW CODE
-              </button>
-              <button
-                class="h-auto sm:h-9 w-auto sm:w-9 justify-center group aspect-square p-2 bg-accent-yellow flex gap-2 items-center rounded-full transition-ease-in"
+              </a>
+              <a
+                href="https://darylbg.github.io/zoomTube/"
+                target="_blank"
+                class="h-auto sm:h-9 w-auto sm:w-9 group aspect-square p-2 bg-accent-yellow flex gap-2 items-center justify-center rounded-full transition-ease-in"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -373,11 +443,11 @@
                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           <div
-            class="flex-1 max-h-[300px] max-w-full sm:max-w-1/2 aspect-video bg-[url('./assets/featured-project.jpeg')] bg-contain bg-center rounded-lg"
+            class="flex-1 max-h-[300px] max-w-full sm:max-w-1/2 aspect-video bg-[url('./assets/zoomtube.PNG')] bg-cover bg-center rounded-lg bg-no-repeat"
           ></div>
         </div>
       </div>
@@ -387,14 +457,14 @@
       >
         <div class="flex flex-1 flex-col gap-5 justify-between">
           <div
-            class="flex-1 max-h-[300px] aspect-video bg-[url('./assets/featured-project.jpeg')] bg-contain bg-center rounded-lg"
+            class="flex-1 max-h-[300px] aspect-video bg-[url('./assets/featured-project.jpeg')] bg-cover bg-no-repeat bg-center rounded-lg"
           ></div>
           <div class="flex flex-col justify-between gap-5 md:gap-10 lg:gap-20">
             <div>
               <div class="flex flex-col gap-2">
                 <div class="flex gap-2 items-baseline">
                   <h2 class="font-inter font-extrabold heading-2 text-stone-50">
-                    WRITEME
+                    PORTFOLIO
                   </h2>
                   <span class="italic font-tino text-md text-stone-400"
                     >(2024)</span
@@ -404,59 +474,37 @@
                   <div
                     class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
                   >
-                    REACT
+                    TAILWIND
                   </div>
                   <div
                     class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
                   >
-                    MONGO DB
-                  </div>
-                  <div
-                    class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
-                  >
-                    REDUX
+                    JQUERY
                   </div>
                 </div>
-                <p class="text-stone-300 text-lg">This is airbnp</p>
+                <p class="text-stone-300 text-lg">This portfolio</p>
               </div>
             </div>
             <div class="flex gap-2">
-              <button
+              <a
+                href="https://github.com/darylbg/my-portfolio"
                 class="h-auto sm:h-9 py-1 px-4 text-stone-900 bg-accent-yellow flex gap-2 items-center rounded-full"
               >
                 VIEW CODE
-              </button>
-              <button
-                class="h-auto sm:h-9 w-auto sm:w-9 justify-center group aspect-square p-2 bg-accent-yellow flex gap-2 items-center rounded-full transition-ease-in"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-4 text-stone-900 group-hover:-translate-y-[1px] group-hover:translate-x-[1px] duration-100"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>
         <div class="flex flex-1 flex-col gap-5 justify-between">
           <div
-            class="flex-1 max-h-[300px] aspect-video bg-[url('./assets/featured-project.jpeg')] bg-contain bg-center rounded-lg"
+            class="flex-1 max-h-[300px] aspect-video bg-[url('./assets/elevate365.PNG')] bg-cover bg-no-repeat bg-center rounded-lg"
           ></div>
           <div class="flex flex-col justify-between gap-5 md:gap-10 lg:gap-20">
             <div>
               <div class="flex flex-col gap-2">
                 <div class="flex gap-2 items-baseline">
                   <h2 class="font-inter font-extrabold heading-2 text-stone-50">
-                    WRITEME
+                    ELEVATE 365
                   </h2>
                   <span class="italic font-tino text-md text-stone-400"
                     >(2024)</span
@@ -466,28 +514,18 @@
                   <div
                     class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
                   >
-                    REACT
-                  </div>
-                  <div
-                    class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
-                  >
-                    MONGO DB
-                  </div>
-                  <div
-                    class="rounded-full border-[1px] border-stone-300 text-stone-300 font-light px-2 text-sm"
-                  >
-                    REDUX
+                    WIX
                   </div>
                 </div>
                 <p class="text-stone-300 text-lg">This is airbnp</p>
               </div>
             </div>
             <div class="flex gap-2">
-              <button
-                class="h-auto sm:h-9 py-1 px-4 text-stone-900 bg-accent-yellow flex gap-2 items-center rounded-full"
+              <div
+                class="h-auto sm:h-9 py-1 px-4 border-[1px] border-[#daff00] text-accent-yellow font-light flex gap-2 items-center rounded-full"
               >
-                VIEW CODE
-              </button>
+                FREELANCE PROJECT
+              </div>
               <button
                 class="h-auto sm:h-9 w-auto sm:w-9 justify-center group aspect-square p-2 bg-accent-yellow flex gap-2 items-center rounded-full transition-ease-in"
               >
@@ -928,8 +966,14 @@
           <div
             class="absolute bottom-full sm:bottom-0 right-0 sm:right-full hidden group-hover:flex flex-col gap-2 pb-10 sm:pb-0 pr-0 sm:pr-10"
           >
-            <div class="flex justify-center align-cennter bg-stone-900 rounded"><span class="">Previous portfolios</span></div>
-            <a href="#" class="h-[5rem] aspect-video flex flex-col sm:flex-row border-2 border-stone-500 hover:border-stone-300 rounded">
+            <div class="flex justify-center align-cennter bg-stone-900 rounded">
+              <span class="">Previous portfolios</span>
+            </div>
+            <a
+              href="https://darylbg.github.io/db-portfolio/"
+              target="_blank"
+              class="h-[5rem] aspect-video flex flex-col sm:flex-row border-2 border-stone-500 hover:border-stone-300 rounded"
+            >
               <img
                 class="h-full w-full object-cover rounded"
                 src="./assets/portfolio-2.PNG"
@@ -951,7 +995,7 @@
       <div class="flex justify-center border-t border-stone-600 pt-3">
         <a
           href="#body"
-          class="underline font-inter font-extralight text-stone-400"
+          class="underline font-inter font-extralight text-stone-400 text-sm"
           >Back to top</a
         >
       </div>
