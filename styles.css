@@ -104,6 +104,10 @@
   overflow: hidden;
 }
 
+.delorean-shadow {
+  box-shadow: 2px 2px 15px rgb(255, 255, 255, 1);
+}
+
 @media screen and (max-width: 640px) {
   .heading-2 {
     font-size: 5cqw;
